@@ -1,6 +1,6 @@
 ## Pizza Time! With React + TypeScript + Vite
 
-POC application to learn tailwind and how to use React in an it's-not-2016-anymore kind of way.
+POC application to learn tailwind and how to use React in an it's-not-2016-anymore kind of way, courtesy of Jonas Schmedtmann's [React course](https://www.udemy.com/course/the-ultimate-react-course)
 
 ## Quick Start
 

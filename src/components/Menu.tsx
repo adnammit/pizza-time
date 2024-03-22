@@ -22,7 +22,7 @@ function Menu() {
             {pizzas.map((pizza) => (
               <Pizza
                 name={pizza.name}
-                soldOut={pizza.soldOut}
+                isSoldOut={pizza.soldOut}
                 photoName={pizza.photoName}
                 ingredients={pizza.ingredients}
                 price={pizza.price}
@@ -34,19 +34,6 @@ function Menu() {
       ) : (
         <p>We're still working on our menu. Please come back later :)</p>
       )}
-
-      {/* <Pizza
-        name="Pizza Spinaci"
-        ingredients="Tomato, mozarella, spinach, and ricotta cheese"
-        photoName="pizzas/spinaci.jpg"
-        price={10}
-      />
-      <Pizza
-        name="Pizza Funghi"
-        ingredients="Tomato, mushrooms"
-        price={12}
-        photoName="pizzas/funghi.jpg"
-      /> */}
     </main>
   );
 }
