@@ -1,5 +1,3 @@
-// import { NavLink } from "react-router-dom";
-
 import { getPizzas } from "../data/pizza";
 import Pizza from "./Pizza";
 

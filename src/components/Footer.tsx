@@ -1,5 +1,3 @@
-// import { NavLink } from "react-router-dom";
-
 import Order from "./Order";
 
 function Footer() {

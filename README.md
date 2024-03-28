@@ -1,6 +1,6 @@
 ## Pizza Time! With React + TypeScript + Vite
 
-POC application to learn tailwind and how to use React in an it's-not-2016-anymore kind of way, courtesy of Jonas Schmedtmann's [React course](https://www.udemy.com/course/the-ultimate-react-course)
+POC application to learn how to use React in an it's-not-2016-anymore kind of way, courtesy of Jonas Schmedtmann's [React course](https://www.udemy.com/course/the-ultimate-react-course)
 
 ## Quick Start
 
@@ -17,7 +17,6 @@ This project was created using the [`react-ts` template for Vite](https://vitejs
 ```
 
 Other requirements/suggestions:
-
 - Prettier vscode extension
 
 ## Vite

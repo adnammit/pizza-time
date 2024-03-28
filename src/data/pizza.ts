@@ -36,9 +36,16 @@ const pizzas = [
   },
   {
     name: "Pizza Prosciutto",
-    ingredients: "Tomato, mozarella, ham, aragula, and burrata cheese",
+    ingredients: "Tomato, mozarella, ham, arugula, and burrata cheese",
     price: 18,
     photoName: "pizzas/prosciutto.jpg",
+    soldOut: false,
+  },
+  {
+    name: "Dirty Vegan Pizza",
+    ingredients: "Violife mozzarella, arugula, pineapple, and olives",
+    price: 14,
+    photoName: "pizzas/margherita.jpg",
     soldOut: false,
   },
 ];
@@ -46,9 +53,5 @@ const pizzas = [
 const getPizzas = () => {
   return pizzas;
 };
-
-// const getPizzas = async () => {
-//   return pizzas;
-// };
 
 export { getPizzas };
