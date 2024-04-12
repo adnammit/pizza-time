@@ -1,15 +1,20 @@
-import { getPizzas } from "../../services/pizza";
-import Pizza from "./Pizza";
+import { useLoaderData } from "react-router-dom";
+// import { getPizzas } from "../../services/pizza";
+import MenuItem from "./MenuItem";
+import { MenuItemDto } from "./menu";
 
-function Menu() {
-  const pizzas = getPizzas();
-  const numPizzas = pizzas.length;
+export default function Menu() {
+  // const pizzas = getPizzas();
+
+  const items = useLoaderData() as MenuItemDto[];
+  console.log(items);
+  // const pizzas = menu?.pizzas ?? [];
+  // console.log(menu);
 
   return (
     <main className="menu">
       <h2>Our menu</h2>
-
-      {numPizzas > 0 ? (
+      {items.length > 0 ? (
         <>
           <p>
             Authentic Italian cuisine. 6 creative dishes to choose from. All
@@ -17,23 +22,22 @@ function Menu() {
           </p>
 
           <ul className="pizzas">
-            {pizzas.map((pizza) => (
-              <Pizza
-                name={pizza.name}
-                isSoldOut={pizza.soldOut}
-                photoName={pizza.photoName}
-                ingredients={pizza.ingredients}
-                price={pizza.price}
-                key={pizza.name}
+            {items.map((item) => (
+              <MenuItem
+                name={item.name}
+                isSoldOut={item.soldOut}
+                imageUrl={item.imageUrl}
+                // photoName={item.photoName}
+                ingredients={item.ingredients}
+                price={item.unitPrice}
+                key={item.name}
               />
             ))}
           </ul>
         </>
       ) : (
         <p>We're still working on our menu. Please come back later :)</p>
-      )}
+      )}{" "}
     </main>
   );
 }
-
-export default Menu;

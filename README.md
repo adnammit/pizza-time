@@ -19,3 +19,6 @@ This project was created using the [`react-ts` template for Vite](https://vitejs
 Other requirements/suggestions:
 - Prettier vscode extension
 
+## Concepts
+* routing and loaders ("render as you fetch")
+
