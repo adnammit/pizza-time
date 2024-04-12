@@ -3,7 +3,7 @@ interface Props {
   openHour: number;
 }
 
-function Order({ closeHour, openHour }: Props) {
+export default function Order({ closeHour, openHour }: Props) {
   return (
     <div className="order">
       <p>
@@ -14,5 +14,3 @@ function Order({ closeHour, openHour }: Props) {
     </div>
   );
 }
-
-export default Order;

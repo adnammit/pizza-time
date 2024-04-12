@@ -1,4 +1,4 @@
-import Order from "./Order";
+import Order from "../features/order/Order";
 
 function Footer() {
   const hour = new Date().getHours();

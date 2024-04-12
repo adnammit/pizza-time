@@ -1,4 +1,4 @@
-import { getPizzas } from "../data/pizza";
+import { getPizzas } from "../../services/pizza";
 import Pizza from "./Pizza";
 
 function Menu() {
