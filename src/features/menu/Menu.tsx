@@ -37,7 +37,7 @@ export default function Menu() {
         </>
       ) : (
         <p>We're still working on our menu. Please come back later :)</p>
-      )}{" "}
+      )}
     </main>
   );
 }

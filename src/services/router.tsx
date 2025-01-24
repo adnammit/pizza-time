@@ -11,7 +11,6 @@ import User from "../features/user/User";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
-
     errorElement: <Error />,
     children: [
       {
